@@ -1,27 +1,42 @@
 import { motion } from "framer-motion";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 const projects = [
   {
     title: "Environmental Impact Assessment",
     description: "Comprehensive analysis of urban development impacts",
+    detailedDescription: "A detailed environmental impact assessment study focusing on urban development in coastal areas. This project involved analyzing air quality, water resources, biodiversity, and social impacts using advanced GIS techniques and environmental modeling tools. The findings helped local authorities make informed decisions about sustainable urban planning.",
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
     category: "Analysis",
   },
   {
     title: "Satellite Data Processing",
     description: "Google Earth Engine automation for land cover change",
+    detailedDescription: "Development of automated scripts in Google Earth Engine to process and analyze satellite imagery for detecting land cover changes over time. This project implemented machine learning algorithms to classify different land use types and track deforestation patterns in the Amazon rainforest.",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     category: "Programming",
   },
   {
     title: "Conservation Planning",
     description: "Habitat restoration and species protection strategies",
+    detailedDescription: "A comprehensive conservation planning project focused on endangered species habitat restoration. This initiative involved mapping critical habitats, developing protection strategies, and implementing restoration measures. The project successfully increased local biodiversity and created sustainable wildlife corridors.",
     image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
     category: "Planning",
   },
 ];
 
 export const Portfolio = () => {
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(
+    null
+  );
+
   return (
     <section className="section-container bg-gray-50" id="portfolio">
       <motion.div
@@ -54,7 +69,10 @@ export const Portfolio = () => {
                 className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <button className="bg-white text-black px-6 py-2 rounded-full transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <button
+                  onClick={() => setSelectedProject(project)}
+                  className="bg-white text-black px-6 py-2 rounded-full transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+                >
                   View Details
                 </button>
               </div>
@@ -69,6 +87,31 @@ export const Portfolio = () => {
           </motion.div>
         ))}
       </div>
+
+      <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+        <DialogContent className="max-w-3xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold mb-4">
+              {selectedProject?.title}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="mt-4">
+            <img
+              src={selectedProject?.image}
+              alt={selectedProject?.title}
+              className="w-full h-64 object-cover rounded-lg mb-6"
+            />
+            <DialogDescription className="text-base leading-relaxed text-gray-700">
+              {selectedProject?.detailedDescription}
+            </DialogDescription>
+            <div className="mt-4">
+              <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+                {selectedProject?.category}
+              </span>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
