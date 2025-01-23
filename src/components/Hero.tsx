@@ -11,8 +11,8 @@ export const Hero = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
-          alt="Nature landscape"
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+          alt="Satellite view of Earth's water resources"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 hero-gradient" />
