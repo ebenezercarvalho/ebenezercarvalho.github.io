@@ -11,7 +11,7 @@ export const Hero = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
+          src="https://images.unsplash.com/photo-1462331321792-cc44368b8894?q=80&w=2153&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Satellite view of Earth's water resources"
           className="w-full h-full object-cover"
         />
