@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -18,6 +19,18 @@ export const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center text-white">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mb-8 flex justify-center"
+        >
+          <Avatar className="w-32 h-32 border-4 border-secondary">
+            <AvatarImage src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Ebenézer Carvalho" />
+            <AvatarFallback>EC</AvatarFallback>
+          </Avatar>
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
