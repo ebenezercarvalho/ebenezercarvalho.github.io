@@ -19,7 +19,7 @@ export const Contact = () => {
 
       <div className="flex justify-center space-x-8">
         <a
-          href="https://github.com"
+          href="https://github.com/ebenezercarvalho"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-primary transition-colors duration-300"
@@ -27,7 +27,7 @@ export const Contact = () => {
           <Github size={24} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ebenezercarvalho"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-primary transition-colors duration-300"
