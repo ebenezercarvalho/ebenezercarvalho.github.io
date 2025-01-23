@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('portfolio');
+    projectsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -37,6 +42,7 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
+          onClick={scrollToProjects}
           className="bg-secondary text-black px-8 py-3 rounded-full font-medium hover:bg-secondary-light transition-colors duration-300"
         >
           Ver projetos
