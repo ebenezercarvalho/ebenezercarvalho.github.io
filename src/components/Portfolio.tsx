@@ -13,7 +13,7 @@ const projects = [
     title: "Monitor de Eutrofização",
     description: "Avaliação espaço-temporal da qualidade da água",
     detailedDescription: "Avaliação rápida da qualidade da água no Reservatório do Funil, RJ por meio de imagens de satélite. Esse projeto utiliza as bases de dados do Google Earth Engine e identifica o aumento da clorofila por meio do índice NDCI.",
-    image: "https://github-production-user-asset-6210df.s3.amazonaws.com/65116965/406779895-3f373aa3-351a-4129-81e2-0222b18e88bc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250127T013525Z&X-Amz-Expires=300&X-Amz-Signature=e60f3bd66816bc10062a969cb6b5cb0eff23b07abe9feae6a7c9559814cc9242&X-Amz-SignedHeaders=host",
+    image: "https://private-user-images.githubusercontent.com/65116965/406779895-3f373aa3-351a-4129-81e2-0222b18e88bc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzc5NDMzMDIsIm5iZiI6MTczNzk0MzAwMiwicGF0aCI6Ii82NTExNjk2NS80MDY3Nzk4OTUtM2YzNzNhYTMtMzUxYS00MTI5LTgxZTItMDIyMmIxOGU4OGJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTI3VDAxNTY0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQzZjg4NmEyZTI1NmY1ZjA2OWJlODBiMGM0NDcxZDBlYjhlMTBkYjc2M2Y5NDFlODg4YzZmOTVhNTMxMmFjMWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.AmZ4kDw81ZCFJHkAED56EcXfORhLUkBGWdStHc5XwKo",
     category: "Análises ambientais",
   },
   {
