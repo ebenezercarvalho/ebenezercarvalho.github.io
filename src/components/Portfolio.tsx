@@ -10,10 +10,10 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Monitor de Eutrofização - Reservatório do Funil",
+    title: "Monitor de Eutrofização",
     description: "Avaliação espaço-temporal da qualidade da água",
-    detailedDescription: "Avaliação rápida da qualidade da água no Reservatório do Funil, RJ por meio de imagens de satélite.",
-    image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
+    detailedDescription: "Avaliação rápida da qualidade da água no Reservatório do Funil, RJ por meio de imagens de satélite. Esse projeto utiliza as bases de dados do Google Earth Engine e identifica o aumento da clorofila por meio do índice NDCI.",
+    image: "https://github-production-user-asset-6210df.s3.amazonaws.com/65116965/406779895-3f373aa3-351a-4129-81e2-0222b18e88bc.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250127T013525Z&X-Amz-Expires=300&X-Amz-Signature=e60f3bd66816bc10062a969cb6b5cb0eff23b07abe9feae6a7c9559814cc9242&X-Amz-SignedHeaders=host",
     category: "Análises ambientais",
   },
   {
@@ -74,7 +74,7 @@ export const Portfolio = () => {
                   onClick={() => setSelectedProject(project)}
                   className="bg-white text-black px-6 py-2 rounded-full transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                 >
-                  View Details
+                  Ver detalhes
                 </button>
               </div>
             </div>

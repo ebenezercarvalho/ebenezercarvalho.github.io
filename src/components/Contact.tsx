@@ -11,9 +11,9 @@ export const Contact = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+        <h2 className="text-3xl font-bold mb-4">Entre em contato</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Interested in collaboration? Let's connect and discuss how we can work together.
+          Se interessou pelo tema? Vamos conversar e compartilhar algumas ideias juntos!
         </p>
       </motion.div>
 
@@ -35,7 +35,7 @@ export const Contact = () => {
           <Linkedin size={24} />
         </a>
         <a
-          href="mailto:contact@example.com"
+          href="carvalho.ebenezer@posgraduacao.uerj.br"
           className="text-gray-600 hover:text-primary transition-colors duration-300"
         >
           <Mail size={24} />

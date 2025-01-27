@@ -48,7 +48,7 @@ export const Hero = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
         >
-          Biólogo, especialista em ciências ambientais e gestão sustentável de recursos hídricos, com experiência em análise de dados ambientais e desenvolvimento de soluções inovadoras para a preservação do meio ambiente.
+          Biólogo com foco em ciências ambientais e gestão sustentável de recursos hídricos, experiência em análise de dados ambientais e desenvolvimento de soluções inovadoras para a preservação do meio ambiente.
         </motion.p>
         
         <motion.button
