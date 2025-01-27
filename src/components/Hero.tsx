@@ -26,7 +26,7 @@ export const Hero = () => {
           className="mb-8 flex justify-center"
         >
           <Avatar className="w-32 h-32 border-4 border-secondary">
-            <AvatarImage src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="Ebenézer Carvalho" />
+            <AvatarImage src="https://avatars.githubusercontent.com/u/65116965?s=400&u=a941f8a880c23b5484c3293ddd077bd85723b0f9&v=4" alt="Ebenézer Carvalho" />
             <AvatarFallback>EC</AvatarFallback>
           </Avatar>
         </motion.div>
@@ -39,7 +39,7 @@ export const Hero = () => {
         >
           Ebenézer Carvalho
           <br />
-          <span className="text-secondary">Ciências ambientais</span>
+          <span className="text-secondary">Portfolio</span>
         </motion.h1>
         
         <motion.p
@@ -48,7 +48,7 @@ export const Hero = () => {
           transition={{ delay: 0.3, duration: 0.8 }}
           className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
         >
-          Especialista em ciências ambientais na gestão sustentável de recursos hídricos, com vasta experiência em análise de dados ambientais e desenvolvimento de soluções inovadoras para a preservação do meio ambiente.
+          Biólogo, especialista em ciências ambientais e gestão sustentável de recursos hídricos, com experiência em análise de dados ambientais e desenvolvimento de soluções inovadoras para a preservação do meio ambiente.
         </motion.p>
         
         <motion.button

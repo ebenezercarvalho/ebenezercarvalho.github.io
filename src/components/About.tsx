@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   const skills = [
-    { name: "Environmental Analysis", level: 90 },
-    { name: "GIS & Remote Sensing", level: 85 },
-    { name: "Earth Engine Programming", level: 80 },
-    { name: "Data Visualization", level: 75 },
+    { name: "Análises ambientais", level: 90 },
+    { name: "GIS & Sensoriamento Remoto", level: 85 },
+    { name: "Google Earth Engine", level: 80 },
+    // { name: "Data Visualization", level: 75 },
   ];
 
   return (
@@ -17,15 +17,17 @@ export const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold mb-6">About Me</h2>
+          <h2 className="text-3xl font-bold mb-6">Sobre mim</h2>
           <p className="text-gray-600 mb-6">
-            As an Environmental Engineer with expertise in Google Earth Engine programming,
-            I combine technical skills with environmental science to create sustainable solutions
-            for complex environmental challenges.
+            Estudante de Mestrado em Engenharia Ambiental na linha de Gestão Sustentável de
+             Recursos hídricos pela <b>Universidade Estadual do Rio de Janeiro</b>, com licenciatura
+             em Biologia, também pela UERJ e Biomedicina pela USS. Atualmente trabalho na 
+             área de saneamento ambiental e recursos hídricos. Desenvolvo soluções tecnológicas 
+             para monitoramento ambiental, avaliação e conservação de recursos naturais.
           </p>
           <p className="text-gray-600">
-            My work focuses on leveraging advanced technologies for environmental monitoring,
-            assessment, and conservation efforts.
+            Meu trabalho se concentra na utilização de diferentes tecnologias para monitoramento,
+            avaliação e esforços de conservação ambiental.
           </p>
         </motion.div>
 
@@ -35,7 +37,7 @@ export const About = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-xl font-semibold mb-6">Technical Skills</h3>
+          <h3 className="text-xl font-semibold mb-6">Habilidades técnicas</h3>
           <div className="space-y-4">
             {skills.map((skill, index) => (
               <div key={skill.name}>

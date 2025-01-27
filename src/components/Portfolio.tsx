@@ -10,11 +10,11 @@ import { useState } from "react";
 
 const projects = [
   {
-    title: "Environmental Impact Assessment",
-    description: "Comprehensive analysis of urban development impacts",
-    detailedDescription: "A detailed environmental impact assessment study focusing on urban development in coastal areas. This project involved analyzing air quality, water resources, biodiversity, and social impacts using advanced GIS techniques and environmental modeling tools. The findings helped local authorities make informed decisions about sustainable urban planning.",
+    title: "Monitor de Eutrofização - Reservatório do Funil",
+    description: "Avaliação espaço-temporal da qualidade da água",
+    detailedDescription: "Avaliação rápida da qualidade da água no Reservatório do Funil, RJ por meio de imagens de satélite.",
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
-    category: "Analysis",
+    category: "Análises ambientais",
   },
   {
     title: "Satellite Data Processing",
@@ -46,9 +46,10 @@ export const Portfolio = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-4">Projetos de destaque</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Explore my recent work in environmental engineering and Earth science
+          Aqui estão alguns dos projetos mais recentes desenvolvidos em diversas áreas
+          como análises ambientais e processamento de dados de satélite. Clique em uma imagem para ver mais detalhes.
         </p>
       </motion.div>
 
